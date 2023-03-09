@@ -27,15 +27,22 @@ screen = pg.display.set_mode((WIDTH, HEIGHT))
 pg.display.set_caption("My first game...")
 clock = pg.time.Clock() 
 
+# play is instantiated here
+player= Player()
+Invader = Mob()
+
+
 all_sprites = pg.sprite.Group()
 enemies = pg.sprite.Group()
 player = Player()
+pewpews = pg.sprite.Group()
 # testSprite = Sprite()
 # testSprite.image = pg.Surface((50,50))
 # testSprite.image.fill(GREEN)
 # testSprite.rect = testSprite.image.get_rect()
 # testSprite.rect.center = (WIDTH / 2, HEIGHT / 2)
 all_sprites.add(player)
+all_sprites.add(Invader)
 # all_sprites.add(testSprite)
 
 # game loop
